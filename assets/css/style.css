@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "aside main"
+        "footer footer"
+    ;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:
+        1fr 6fr 1fr;
+    gap: 20px;
+}
+
+nav {
+    background-color: rgb(45, 133, 255);
+    grid-area: footer;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 60px;
+    color: white;
+
+}
+
+aside {
+    background-color: whitesmoke;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+main {
+    background-color: whitesmoke;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+main p{
+    font-size: 2rem;
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    /* flex: 3 1 0; */
+    /* width: 40%; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px rgb(45, 133, 255);
+    border-radius: 4px;
+}
+
+.card-img {
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-button {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(45, 133, 255);
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: rgb(17, 82, 174);
+    color: white;
+}
+
+.card:hover {
+
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+footer {
+    background-color: rgb(45, 133, 255);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    height: 60px;
+
+}
+
+div p {
+    display: inline-block;
+    padding: 4px;
+    margin: 0;
+}
+
+.item-quantity {
+    color:  rgb(45, 133, 255);
+}
+
+.logo{
+    width: 40px;
+    padding: 10px;
+}
+
+/* imagenes de productos */
+.product-img1 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/09/01/1662028598b9164c30a8410fc9d71b81fc63748d4e_thumbnail_600x.webp");
+}
+
+.product-img2 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/09/16/1663317442b0fa488330bc5160ce3ca7a85e12e2c3_thumbnail_600x.webp");
+}
+
+.product-img3 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/10/13/16656261376061a0599055f94e4eaa637fa487d4b2_thumbnail_600x.webp");
+}
+
+.product-img4 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/06/10/1654851456ff629d0dea22d70ed89de29ed26c6090_thumbnail_600x.webp");
+}
+
+.product-img5 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/06/30/16565587663e4e92fe95d99199f68ed726616718f3_thumbnail_600x.webp");
+}
+
+.product-img6 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/06/10/1654851465eeafabfdd14994a9e18c7847ecd0686a_thumbnail_600x.webp");
+}
+
+.product-img7 {
+    background-image: url("https://img.ltwebstatic.com/images3_pi/2022/04/24/1650784278cfe36ee6f9a7174b83f5c7f5ff4fef02_thumbnail_600x.webp");
+}
+
